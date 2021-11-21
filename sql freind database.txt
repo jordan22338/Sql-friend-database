@@ -1,0 +1,29 @@
+CREATE TABLE friends(
+  id INTEGER,
+  name TEXT,
+  birthday DATE
+);
+INSERT INTO friends( id, name, birthday)
+VALUES( 1, Ororo Munroe, "1940-05-30");
+
+INSERT INTO friends( id, name, birthday)
+VALUES( 2, "Joseph", "2002-04-05");
+INSERT INTO friends( id, name, birthday)
+VALUES( 3, "ben", "2004-14-17");
+UPDATE friends 
+SET name = "Storm"
+WHERE id = 1;
+ALTER TABLE friends 
+ADD COLUMN email TEXT;
+UPDATE freinds 
+SET email = "storm@gmail.com"
+WHERE id = 1;
+UPDATE freinds 
+SET email = " Joseph444@gmail,com"
+WHERE id = 2;
+UPDATE freinds
+SET email = "ben02@gmail.com"
+WHERE id = 3;
+DELETE FROM freinds 
+WHERE id = 1;
+SELECT * FROM friends;
